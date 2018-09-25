@@ -1,43 +1,54 @@
 <nav class='transparent z-depth-0'>
-  <a href="#!" class="brand-logo">Logo</a>
+  <a href="#!" class="brand-logo">LOGOLOGO</a>
   <div class="nav-wrapper">
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">Javascript</a></li>
-      <li><a href="mobile.html">Mobile</a></li>
+      <li><a href="sass.html">Comment ça marche</a></li>
+      <li><a href="badges.html">Partenaires</a></li>
     </ul>
   </div>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
-  <li><a href="sass.html">Sass</a></li>
-  <li><a href="badges.html">Components</a></li>
-  <li><a href="collapsible.html">Javascript</a></li>
-  <li><a href="mobile.html">Mobile</a></li>
+  <li><a href="sass.html">Comment ça marche</a></li>
+  <li><a href="badges.html">Partenaires</a></li>
 </ul>
 
 <div class="banner">
   <div class="banner-content">
     <h1>Mettez votre message dans le métro</h1>
-    <h4>Pour la première fois, les particuliers ont leur affiche dans le métro.</h4>
-    <a class="btn btn-primary btn-large ">Je veux participer !</a>
+    <h4>Achetez un emplacement et soyez vue dans 80 stations de métro.</h4>
+
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+
   </div>
 </div>
 
 <div class="container">
   <div class="row">
 
+    <h2 class="blue-text text-darken-4 center-align">Comment ca marche ? 💡</h2>
+
     <div class="col s12 m4">
       <div class="card">
         <div class="card-image">
           <%= image_tag("select.svg") %>
-          <span class="card-title blue-text text-darken-3" style='font-weight: stronger;'>Sélectionnez un emplacement</span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <span class="card-title blue-text text-darken-3" style='font-weight: stronger;'>Sélectionnez un emplacement</span>
+          <p>Sélectionnez un emplacement sur l'affiche. Il y en a pour toutes les bourses.</p>
         </div>
       </div>
     </div>
@@ -46,11 +57,10 @@
       <div class="card">
         <div class="card-image">
           <%= image_tag("confirmed.svg") %>
-          <span class="card-title blue-text text-darken-3" style='font-weight: stronger;'>Card Title</span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <span class="card-title blue-text text-darken-3" style='font-weight: stronger;'>Mettez votre message</span>
+          <p>Uploadez une image. Ecrivez un message pour les gens qui voudront vous retrouver.</p>
         </div>
       </div>
     </div>
@@ -59,11 +69,10 @@
       <div class="card">
         <div class="card-image">
           <%= image_tag("chatting.svg") %>
-          <span class="card-title blue-text text-darken-3" style='font-weight: stronger;'>Card Title</span>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <span class="card-title blue-text text-darken-3" style='font-weight: stronger;'>Attendez la parution</span>
+          <p>Dès que l'affiche est remplie, elle sera publiée. Votre image se retrouvera dans 80 stations de métro et sera vue par 4 millions de voyageurs</p>
         </div>
       </div>
     </div>
@@ -71,7 +80,29 @@
   </div>
 </div>
 
-<footer class="page-footer blue darken-4">
+<div class="blue darken-4 white-text">
+  <div class="container">
+
+    <div class="row">
+      <h2 class='center-align'>Combien ça coûte ? 💸💰</h2>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+
+
+<footer class="page-footer blue-grey lighten-4">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
@@ -96,3 +127,4 @@
     </div>
   </div>
 </footer>
+
