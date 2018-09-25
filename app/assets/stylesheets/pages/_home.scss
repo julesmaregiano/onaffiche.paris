@@ -11,11 +11,13 @@
   align-items: center;
   justify-content: center;
 }
+
 .banner h1 {
   font-size: 50px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
+
 .banner p {
   font-size: 25px;
   font-weight: lighter;
@@ -25,7 +27,8 @@
 }
 
 .card-image {
-  height: 400px;
+  min-height: 400px;
+  padding: 5px;
 }
 
 .large-cta {
@@ -34,6 +37,17 @@
   padding: 13px;
 }
 
-img .brand-logo {
+.brand-logo {
+  margin: 10px 0 0 10px;
   height: 80px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    min-height: 100vh
+  }
+  .card-image {
+    min-height: 100px;
+  }
 }
