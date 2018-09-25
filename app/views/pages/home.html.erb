@@ -1,3 +1,9 @@
+<script>
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+
 <nav class='transparent z-depth-0'>
   <a href="#!" class="brand-logo">LOGO</a>
   <div class="nav-wrapper">
@@ -20,26 +26,25 @@
     <h4>Achetez un emplacement et soyez vue dans 80 stations de métro.</h4>
 
     <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal modal-fixed-footer">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
-    </div>
-
+    <a href="/sondage" class="waves-effect waves-light btn large-cta red">Réservez votre emplacement !</a>
   </div>
 </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Soyez prévenu dès que le site est en ligne</h4>
+      <p>A bunch of text</p>
+      <a href="#!" class="modal-close waves-effect waves-green red text btn-flat">Agree</a>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
 
 <div class="container">
   <div class="row">
 
-    <h2 class="blue-text text-darken-4 center-align">Comment ca marche ? 💡</h2>
+    <h3 class="blue-text text-darken-4 center-align">Comment ca marche ? 💡</h3>
 
     <div class="col s12 m4">
       <div class="card">
